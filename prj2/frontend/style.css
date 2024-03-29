@@ -1,0 +1,143 @@
+body{
+  margin: 0px;
+}
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+.homepage{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  padding: 15px 60px;
+  position: absolute;
+  justify-content: space-between;
+  border-bottom: solid 3px #000;
+  width: 100%;
+  height: fit-content;
+}
+.logo{
+  align-self: center;
+}
+.create_n_join{
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+.create_n_join button{
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #006bff;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  color: #fff;
+}
+.create_n_join button:hover{
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  border: solid 2px #000;
+  color: #006bff;
+}
+.create{
+  margin-right: 20px;
+}
+.option{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  height: fit-content;
+}
+.option a{
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  text-decoration: none;
+}
+.option a:hover{
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+.My_schedule{
+  margin-right: 70px;
+}
+.about{
+  align-self: center;
+}
+.acc_n_notice{
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+}
+.acc{
+  display: flex;
+  flex-direction: row;
+}
+.avt{
+  align-self: center;
+  margin-right: 15px;
+}
+.acc_name{
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  align-self: center;
+}
+.notice{
+  align-self: center;
+  margin-left: 30px;
+}
+.container{
+  margin-top: 97px;
+}
+.background img{
+  position: relative;
+}
+.index_1{
+  font-size: 70px;
+  font-weight: 400;
+  letter-spacing: 0.9px;
+  color: #006bff;
+  top: 200px;
+  left: calc(50% - 600px);
+  position: absolute;
+  width: 1200px;
+  text-shadow: 2px 0 #000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+               1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+  text-align: center;
+}
+.index_2{
+  font-size: 39px;
+  font-weight: 400;
+  letter-spacing: 0.7px;
+  color: #fff;
+  top: 350px;
+  left: calc(50% - 500px);
+  position: absolute;
+  width: 1000px;
+  text-align: center;
+  text-shadow: 2px 0 #000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+  1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+}
+.blur{
+  mix-blend-mode: multiply;
+  position: absolute;
+  background: #858585;
+  left: 0px;
+  right: 0px;
+  top: 97px;
+  height: 904px;
+}
