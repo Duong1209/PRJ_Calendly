@@ -19,7 +19,11 @@
         <button class="button"><a href="create.html">Create</a></button>
        </div>
        <div class="join">
-        <button class="button"><a href="">Join</a></button>
+        <button class="button" onclick="openPopup()">Join</button>
+       </div>
+       <div class="import">
+          <input type="file" id="uploadBtn">
+          <label for="uploadBtn">Import</label>
        </div>
       </div>
       <div class="option">  
@@ -54,7 +58,13 @@
       <div class="index_2">
         Calendly is your scheduling automation platform for eliminating the back-and-forth emails to find the perfect time — and so much more.
       </div>
+      <div class="pop_up" id="popup">
+        <p>Join event by code</p>
+        <input type="text" placeholder="Enter event code">
+        <button class="button" onclick="closePopup()">Join</button>
+      </div>
     </div>
+    
    </div>
 </body>
 </html>
