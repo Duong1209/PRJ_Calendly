@@ -56,6 +56,10 @@
       <div class="content">
         <div class="content_left">
           <div class="wrapper">
+            <div class="event-name">
+              <p class="schedule_inf">Event name :</p>
+              <input type="text">
+            </div>
             <p class="schedule_inf">Please choose a day to schedule your event :</p>
           <div class="calendar">
           <div class="calendar_heading">
@@ -116,10 +120,50 @@
           <div class="description">
             <textarea name="" id="" cols="30" rows="10"></textarea>
           </div>
+          <div class="submit">
+            <button class="button">Add slot</button>
+        </div>
           </div>
       </div>
         <div class="content_right">
           <div class="wrapper">
+            <div class="slot-list">
+              <h1>Scheduled slot :</h1>
+              <table>
+                  <tr>
+                      <th>No</th>
+                      <th>Date</th>
+                      <th>Start time</th>
+                      <th>Location</th>
+                      <th>Duration</th>
+                      <th></th>
+                  </tr>
+                  <tr>
+                      <td>1</td>
+                      <td>MM/DD/YYYY</td>
+                      <td>00 AM</td>
+                      <td>B1-803</td>
+                      <td>00 Min</td>
+                      <td><a href="">Remove</a></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>MM/DD/YYYY</td>
+                    <td>01 AM</td>
+                    <td>B1-803</td>
+                    <td>00 Min</td>
+                    <td><a href="">Remove</a></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>MM/DD/YYYY</td>
+                  <td>02 AM</td>
+                  <td>B1-803</td>
+                  <td>00 Min</td>
+                  <td><a href="">Remove</a></td>
+              </tr>
+              </table>
+          </div>
             <span class="label">Add event participant</span>
           <div class="participant">
             <div class="method_1">
@@ -132,21 +176,13 @@
             </div>
             <div class="method_2">
               <span class="method_label">Or you can add participants from your class list</span>
-              <div class="search_wrapper">
-                <div class="search_input">
-                  <input type="text" placeholder="Search in your list..">
-                  <div class="auto_com">
-                  </div>
-                </div>
-              </div>
+            
             </div>
             
             </div>
-            </div>
-            <div class="content_right_footer">
-              <div class="submit">
-                <button class="button">Create schedule</button>
-            </div>
+            <div class="submit">
+              <button class="button">Create schedule</button>
+          </div>
             </div>
           </div>
           
