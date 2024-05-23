@@ -36,6 +36,34 @@ body{
   flex-direction: row;
   align-self: center;
 }
+.join{
+  display: block;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #006bff;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+  text-align: center;
+  line-height: 50px;
+}
+.join:hover{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);  
+  cursor: pointer;
+}
+
+#Join{
+display: none;
+}
 .button{
   width: 150px;
   height: 50px;
@@ -411,6 +439,14 @@ h1{
   font-weight: 500;
   padding: 0 40px 0 20px;
 }
+.event-name input{
+  height: 50px;
+  width: 500px;
+  margin-left: 70px;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 0 40px 0 20px;
+}
 .duration{
   display: flex;
   margin-left: 50px;
@@ -438,11 +474,11 @@ h1{
 }
 .description textarea{
   margin-left: 50px;
-  width: 600px;
-  height: 200px;
   padding: 20px;
   font-size: 20px;
-  font-weight: 500;
+  max-width: 600px;
+  max-height: 250px;
+  width: 600px;
 }
 .participant{
   margin: 0 50px;
@@ -450,6 +486,24 @@ h1{
   background: #fff;
   border-radius: 0 0 10px 10px;
   border: solid 1px #000;
+}
+.slot-list table{
+  width: 600px;
+  margin: 20px 0 0 40px;
+  font-size: 18px;
+  text-align: center;
+}
+.slot-list table tr th,td{
+  height: 50px;
+  border: 1px solid #000;
+  padding: 5px;
+}
+table{
+  border-collapse: collapse;
+}
+.slot-list table a{
+  color: #ff0000;
+  text-decoration: none;
 }
 .label{
   padding: 20px;
@@ -622,7 +676,7 @@ section .upload_details span{
 .auto_com::-webkit-scrollbar{
   width: 0px;
 }
-.content_right_footer{
+.content_footer{
   position: relative;
   margin-top: 50px;
   width: 589px;
@@ -630,6 +684,7 @@ section .upload_details span{
 .submit{
   display: flex;
   flex-direction: row-reverse;
+  margin-top: 20px;
 }
 .submit .button{
   height: 70px;
@@ -641,14 +696,18 @@ section .upload_details span{
   background: #fff;
   border-radius: 6px;
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%) scale(0.1);
   text-align: center;
   padding: 0 30px 30px;
   color: #404040;
-  visibility: hidden;
-  transition: transform 0.4s, top 0.4s;
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%,-50%);
+}
+#Join:checked ~ .pop_up{
+  opacity: 1;
+  visibility: visible;
 }
 .pop_up p{
   color: #000000;
